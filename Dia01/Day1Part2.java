@@ -22,7 +22,5 @@ public class Day1Part2 {
             }
         }
         System.out.println(cont);
-
     }
-    
 }
