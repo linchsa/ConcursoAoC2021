@@ -1,4 +1,4 @@
-file = open('C:/Users/diego/OneDrive/Escritorio/VSCODE/ConcursoAoC2021/Dia02/input.txt')
+file = open('C:/Users/diego/OneDrive/Escritorio/VSCODE/ConcursoAoC2021/Dia02/input2.txt')
 list = file.readlines()
 h=0 #depth
 f=0 #forward
