@@ -24,7 +24,6 @@ while(l<=12):
     distributor= fold.readline().split('=')
     if(distributor[0]=='x'):
         x=int(distributor[1])
-        print(x)
         cont=0
         for j in range(x,lenmatrixj):
             for i in range(lenmatrixi):
@@ -38,7 +37,6 @@ while(l<=12):
 
     if(distributor[0]=='y'):
         y=int(distributor[1])
-        print(y)
         for j in range(y,lenmatrixi):
             for i in range(lenmatrixj):
                 if(matrix[j][i]=='#'):
@@ -48,8 +46,6 @@ while(l<=12):
 
         lenmatrixi=lenmatrixi-1-y
         l+=1
-print(lenmatrixi)
-print(lenmatrixj)
 for j in range(lenmatrixi):
     for i in range(lenmatrixj):
         print(matrix[j][i],end=" ")
