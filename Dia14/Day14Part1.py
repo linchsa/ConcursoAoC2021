@@ -31,6 +31,7 @@ print(newlist.count('O'))
 print(newlist.count('P'))
 print(newlist.count('V'))
 print(newlist.count('S'))
+print(len(newlist))
 
 
 
