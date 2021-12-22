@@ -11,14 +11,9 @@ for i in range(1501):
         matrix[i].append('.')
 for line in file:
     coor=line.split(',')
-    print(coor)
     i=int(coor[1])
     j=int(coor[0])
     matrix[i][j]='#'
-'''for i in matrix:
-    print(i)'''
-
-print('\n')
 
 
 
