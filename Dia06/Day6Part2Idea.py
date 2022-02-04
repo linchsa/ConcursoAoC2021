@@ -8,13 +8,29 @@ list = [1 , 1 , 3 , 1 , 3 , 2 , 1 , 3 , 1 , 1 , 3 , 1 , 1 , 2 , 1 , 3 , 1 , 1 , 
 , 1 , 1 , 3 , 2 , 1 , 1 , 3 , 1 , 1 , 1 , 5 , 4 
 , 3 , 3 , 5 , 1 , 3 , 4 , 3 , 3 , 1 , 4 , 4 , 1 
 , 2 , 1 , 1 , 2, 1 , 1 , 1 , 2 , 1 , 1 , 1 , 1 , 1 , 5 , 1 , 1 , 2 , 1 , 5 , 2 , 1 , 1 , 2 , 3 , 2 , 3 , 1 , 3 , 1 , 1 , 1 , 5 , 1 , 1 , 2 , 1 , 1 , 1 , 1 , 3 , 4 , 5 , 3 , 1 , 4 , 1 , 1 , 4 , 1 , 4 , 1 , 1 , 1 , 4 , 5 , 1 , 1 , 1 , 4 , 1 , 3 , 2 , 2 , 1 , 1 , 2 , 3 , 1 , 4 , 3 , 5 , 1 , 5 , 1 , 1 , 4 , 5 , 5 , 1 , 1 , 3 , 3 , 1 , 1 , 1, 1 , 5, 5 , 3 , 3 , 2 , 4 , 1 , 1 , 1 , 1 , 1 , 5 , 1 , 1 , 2 , 5 , 5 , 4 , 2 , 4 , 4 , 1 , 1 , 3, 3 , 1 , 5 , 1 , 1 , 1 , 1 , 1 , 1]
-
+n=1
+list=[list[i:i + n] for i in range(0, len(list), n)]
+#print(list)
 k=0
-while(k<80):
-    for i,j in enumerate(list) :
-        list[i]-=1
-        if(j==0):
-            list[i]=6
-            list.append(9)        
-    k+=1
-print(len(list))
+sum=0
+lenght=0
+for z in list:
+    print(z)
+    k=0
+    length=0
+    while(k<256):
+        for i,j in enumerate(z):
+            z[i]-=1
+            if(j==0):
+                z[i]=6
+                z.append(9)
+        #print(z)
+        k+=1
+        print(k)
+    lenght=len(z)
+    sum+=lenght
+    break
+    #print(list.index(z))
+
+print(lenght)
+print(sum)

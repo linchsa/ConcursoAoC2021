@@ -1,11 +1,18 @@
 #NO ESTÁ TERMINADO
 import numpy as np
 
-with open('C:/Users/diego/OneDrive/Escritorio/VSCODE/ConcursoAoC2021/Dia09/input2.txt','r') as f:
-    datos = ''.join(f.readlines()).replace('\n',';')
-
-matrix = np.matrix(datos)
+file = open('C:/Users/diego/OneDrive/Escritorio/VSCODE/ConcursoAoC2021/Dia09/input2.txt')
+list= file.readlines()
+matrix= None
+k=0
+l=0
+for i in list:
+    for j in i:
+        None
+        l+=1
+    k+=1
 print(matrix)
+
 '''for i in range(len(matrix)):
     for j in range(len(matrix[i])):
         if(i==0 and j==0):
