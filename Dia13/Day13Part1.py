@@ -1,4 +1,4 @@
-import numpy as np
+#import numpy as np
 import math
 file = open('C:/Users/diego/OneDrive/Escritorio/VSCODE/ConcursoAoC2021/Dia13/input.txt')
 y=7
